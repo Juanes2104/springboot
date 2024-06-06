@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body class="w-full h-[100vh] flex justify-center items-center">
+  <section th:fragment="register"
+           class="w-full h-full flex-1 flex justify-center items-center">
+    <form action="#" th:action="" method="post" class="w-[30%] h-[50%] flex flex-col justify-evenly">
+
+        <input type="text" placeholder="First name"
+               class="rounded-md border-solid border-b-2 border-pink-300 p-2 focus:outline-none focus:border-purple-300">
+        <input type="text" placeholder="Last name"
+               class="rounded-md border-solid border-b-2 border-pink-300 p-2 focus:outline-none focus:border-purple-300">
+        <input type="email" placeholder="Email"
+               class="rounded-md border-solid border-b-2 border-pink-300 p-2 focus:outline-none focus:border-purple-300">
+        <input type="password" placeholder="Password"
+               class="rounded-md border-solid border-b-2 border-pink-300 p-2 focus:outline-none focus:border-purple-300">
+        <label>Description</label>
+        <textarea class="rounded-md border-solid border-2 border-pink-300 focus:outline-none focus:border-purple-300">
+
+        </textarea>
+        <input type="submit" value="Enviar">
+
+    </form>
+  </section>
+</body>
+</html>
